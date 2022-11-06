@@ -1,0 +1,98 @@
+/* Button */
+
+.Button {
+  padding: 10px 20px;
+}
+
+/* Counter */
+
+.Counter {
+  padding: 15px;
+  background: lightgray;
+}
+
+/* Navbar */
+
+.Navbar {
+  padding: 15px;
+  background-color: #333333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Navbar>ul {
+  display: flex;
+  align-items: center;
+}
+
+.Navbar>ul>li:not(:last-of-type) {
+  margin-right: 15px;
+}
+
+.imgLogo{
+  max-width: 100px;
+  margin-right:20px;
+}
+
+.footer {
+  background-color: #333333;
+  color:white;
+  font-size:10px;
+  padding:18px;
+  margin-top:20px;
+}
+
+.MainLayout{
+  background-color: black;
+  color:white;
+  width: 100%;
+  height: 100%;
+}
+
+.gridMovieCard{
+  max-width: 90%;
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 200px) {
+  .gridMovieCard { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 600px) {
+  .gridMovieCard { grid-template-columns: repeat(4, 1fr); }
+}
+
+@media (min-width: 900px) {
+  .gridMovieCard { grid-template-columns: repeat(6, 1fr); }
+}
+
+@media (min-width: 1200px) {
+  .gridMovieCard { grid-template-columns: repeat(8, 1fr); }
+}
+
+.movieCard{
+  text-align: center;
+  border: solid 1px;
+  display: flex;
+  justify-content: center;
+}
+
+.movieName{
+  margin: 20px;
+}
+
+.imgMovie{
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+.input{
+  width: 100%;
+  height: 40px;
+  margin-bottom:20px;
+}
+
