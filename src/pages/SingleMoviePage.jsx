@@ -20,7 +20,8 @@ function SingleMoviePage() {
       <p>Numero de escritores: {movie.writers.length}</p>
       <div>Nomes dos escitores:</div>
       {movie.writers.map((writer, index) => {
-        //! duplo valor para key ${writer}${index}
+
+        // duplo valor para key ${writer}${index}
         return <div key={`${writer}${index}`}>{writer}</div>;
       })}
       {hasVideoId ? (
